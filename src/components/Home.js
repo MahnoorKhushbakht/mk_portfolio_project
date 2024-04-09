@@ -10,10 +10,10 @@ import TagLine from './TagLine';
 export default function HomePage() {
   return (
     <ChakraProvider>
+      <div id='home' height='100vh'>
     <Box 
       sx={{
         maxWidth:'100%',
-        maxHeight:'100%',
         display: "flex",
         textAlign: "left",
         alignItems: "flex-start",
@@ -24,7 +24,6 @@ export default function HomePage() {
       }}
       data-aos="fade-down"
       data-aos-delay='100'
-      id='home'
     >
       <Box sx={{ width: { base: '95%', md: '70%' }, marginTop: ['5%', '5%'] }}> 
       <TagLine/>
@@ -63,7 +62,8 @@ export default function HomePage() {
         <Btn />
         <TagBar />
       </Box>
-    </Box>
+    </Box> 
+    </div>
     </ChakraProvider>
   );
 }
