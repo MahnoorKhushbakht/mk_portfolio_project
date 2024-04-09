@@ -1,0 +1,13 @@
+.header {
+    background-color: transparent;
+    backdrop-filter: blur(10px); 
+  }
+  @media (max-width: 576px) {
+    .header {
+      background-color: transparent;
+      backdrop-filter: blur(20px); 
+    }
+  }
+
+  
+  
