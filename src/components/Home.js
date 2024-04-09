@@ -14,7 +14,7 @@ export default function HomePage() {
             style={{
               display: 'flex',
               alignItems: 'center',
-              marginBottom:'50px'
+              height:'100vh'
             }}>
         <Box
           sx={{
