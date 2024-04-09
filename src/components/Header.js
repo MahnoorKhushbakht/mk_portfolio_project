@@ -14,6 +14,11 @@ function Header() {
     fontFamily: 'Helvetica, Arial',
   };
 
+  const dropdownStyles = {
+    backgroundColor: 'transparent', 
+    backdropFilter: 'blur(20px)',
+  };
+
   return (
     <Navbar
       expand="lg"
@@ -35,7 +40,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" >
-          <Nav.Link href="#home" style={linkStyles}>
+            <Nav.Link href="#home" style={linkStyles}>
               Home
             </Nav.Link>
             <Nav.Link href="#background" style={linkStyles}>
@@ -47,7 +52,7 @@ function Header() {
             <Nav.Link href="#contact" style={linkStyles}>
               Contact
             </Nav.Link>
-            <NavDropdown style={linkStyles} title="More" id="collapsible-nav-dropdown">
+            <NavDropdown title="More" id="collapsible-nav-dropdown" style={dropdownStyles}>
               <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
               <NavDropdown.Item href="#review">Review</NavDropdown.Item>
               <NavDropdown.Item href="#about">About</NavDropdown.Item>
