@@ -6,7 +6,7 @@ export default function TagBar() {
   return (
     <ChakraProvider>
       <Box maxWidth='100%' overflowX='auto'>
-        <HStack spacing={1} flexWrap="wrap" width={{ base: '100%', md: '70%' }}  justifyContent='flex-start'>
+        <HStack spacing={2} flexWrap="wrap" width={{ base: '100%', md: '70%' }}  justifyContent='flex-start'>
           {['HTML', 'CSS', 'Javascript', 'React', 'NodeJs','MongoDB' ,'ResponsiveDesign', 'WebDevelopement', 'WebDesign', 'DeveloperPortfolio'].map((name) => (
             <Tag
               size={{ base: 'sm', md: 'md' }}
