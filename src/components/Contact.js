@@ -232,7 +232,7 @@ const Contact = () => {
                     open={isSuccess}
                     autoHideDuration={6000}
                     onClose={() => setIsSuccess(false)}
-                   anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                   anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
                   >         
                     <Alert severity="success" 
     sx={{

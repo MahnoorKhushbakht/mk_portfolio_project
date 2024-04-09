@@ -13,6 +13,7 @@ export default function HomePage() {
     <Box 
       sx={{
         maxWidth:'100%',
+        maxHeight:'100%',
         display: "flex",
         textAlign: "left",
         alignItems: "flex-start",
