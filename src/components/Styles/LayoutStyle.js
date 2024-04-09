@@ -7,7 +7,6 @@ export default function LayoutStyle({children,id}) {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
         justifyContent: 'center',
         marginBottom:'50px'
       }}
