@@ -12,7 +12,7 @@ const customTheme = (outerTheme) =>
           root: {
             '--TextField-brandBorderColor': 'white',
             '--TextField-brandBorderHoverColor': '#593ea3',
-            '--TextField-brandBorderFocusedColor': '#593ea3',
+            '--TextField-brandBorderFocusedColor': 'white',
             '& label.Mui-focused': {
               color: 'var(--TextField-brandBorderFocusedColor)',
             },

@@ -252,7 +252,7 @@ const Contact = () => {
                     open={isError}
                     autoHideDuration={6000}
                     onClose={() => setIsError(false)}
-                   anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
+                   anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
                   >
                       <Alert
     severity="error"
