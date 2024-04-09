@@ -12,8 +12,6 @@ export default function HomePage() {
     <ChakraProvider>
       <div id='home'
             style={{
-              display: 'flex',
-              alignItems: 'center',
               height:'100vh'
             }}>
         <Box
@@ -24,8 +22,8 @@ export default function HomePage() {
             alignItems: "flex-start",
             justifyContent: "flex-start",
             flexDirection: 'column',
-            marginBottom: '50px',
             marginLeft: { base: '25px', md: '110px' },
+            marginTop: { base: '10px', md: '15px' },
           }}
           data-aos="fade-down"
           data-aos-delay='100'
