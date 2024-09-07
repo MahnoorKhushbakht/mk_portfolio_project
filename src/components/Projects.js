@@ -7,7 +7,7 @@ import HeadinStyleMD from './Styles/HeadingStyleMD';
 import HeadinStyleSM from './Styles/HeadingStyleSM';
 import LayoutStyle from './Styles/LayoutStyle';
 import DividerStyle from './Styles/DividerStyle';
-import { Divider } from '@chakra-ui/react'
+
 export default function Projects() {
   return (
 <LayoutStyle id='project'>
