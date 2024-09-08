@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import project1 from '../images/project1.jpeg'
 import project2 from '../images/project2.jpeg';
 import project3 from '../images/project3.JPG';
-import project4 from '../images/project4s.JPG';
+import project4 from '../images/project4.JPG';
 import { Carousel } from 'react-bootstrap';
 
 
