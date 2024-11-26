@@ -4,13 +4,6 @@ import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import 'aos/dist/aos.css';
-<<<<<<< HEAD
-=======
-import project1 from '../images/project1.jpeg'
-import project2 from '../images/project2.jpeg';
-import project3 from '../images/project3.JPG';
-import project4 from '../images/project4.JPG';
->>>>>>> aaf0cee4a765029a7d9d724ab75cfe4ea2fea2e7
 import { Carousel } from 'react-bootstrap';
 
 const projects = [
@@ -38,7 +31,7 @@ const projects = [
   {
     id: 4,
     title: 'Market Minds',
-    image: require('../images/project4s.JPG'),
+    image: require('../images/project4.JPG'),
     liveLink: 'https://marketminds.vercel.app/',
     githubLink: 'https://github.com/MahnoorKhushbakht/BSolutions.git',
   },
