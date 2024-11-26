@@ -4,202 +4,118 @@ import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import 'aos/dist/aos.css';
-import project1 from '../images/project1.jpeg'
-import project2 from '../images/project2.jpeg';
-import project3 from '../images/project3.JPG';
-import project4 from '../images/project4s.JPG';
 import { Carousel } from 'react-bootstrap';
 
+const projects = [
+  {
+    id: 1,
+    title: 'Portfolio Website',
+    image: require('../images/project1.jpeg'),
+    liveLink: 'https://promiseemmanuel.onrender.com/',
+    githubLink: 'https://github.com/MahnoorKhushbakht/pe_portfolio_website',
+  },
+  {
+    id: 2,
+    title: 'Marketing Agency',
+    image: require('../images/project2.jpeg'),
+    liveLink: 'https://neskomedia.onrender.com/',
+    githubLink: 'https://github.com/MahnoorKhushbakht/marketing-agency',
+  },
+  {
+    id: 3,
+    title: 'Tailored Gents',
+    image: require('../images/project3.JPG'),
+    liveLink: 'https://mens-clothing.vercel.app/',
+    githubLink: 'https://github.com/MahnoorKhushbakht/mens-clothing.git',
+  },
+  {
+    id: 4,
+    title: 'Market Minds',
+    image: require('../images/project4s.JPG'),
+    liveLink: 'https://marketminds.vercel.app/',
+    githubLink: 'https://github.com/MahnoorKhushbakht/BSolutions.git',
+  },
+  {
+    id: 5,
+    title: 'Echoes of Thoughts',
+    image: require('../images/project5.JPG'),
+    liveLink: 'https://echo-of-thoughts.vercel.app/',
+    githubLink: 'https://github.com/MahnoorKhushbakht/blog.git',
+  },
+];
 
 export default function ProjectMD() {
-  const handlePortfolioClick = () => {
-    window.open('https://promiseemmanuel.onrender.com/', '_blank');
-  };
-
-  const handleMarketingClick = () => {
-    window.open('https://neskomedia.onrender.com/', '_blank');
-  };
-
-  const handleTGMarketingClick = () => {
-    window.open('https://mens-clothing.vercel.app/', '_blank');
-  };
-
-  const handleMarketMindsClick = () => {
-    window.open('https://marketminds.vercel.app/', '_blank');
-  };
-
-
-  const handleGitPortfolioClick = () => {
-    window.open('https://github.com/MahnoorKhushbakht/pe_portfolio_website', '_blank');
-  };
-
-  const handleGitMarketingClick = () => {
-    window.open('https://github.com/MahnoorKhushbakht/marketing-agency', '_blank');
-  };
-
-  const handleGitTGClick = () => {
-    window.open('https://github.com/MahnoorKhushbakht/mens-clothing.git', '_blank');
-  };
-  
-  const handleGitMMClick = () => {
-    window.open('https://github.com/MahnoorKhushbakht/BSolutions.git', '_blank');
-  };
   return (
-      <Carousel controls={false} indicators={true} style={{ width: '100%' }}>
-          <Carousel.Item>
-            <Card  data-aos="fade-down" data-aos-delay='100' sx={{ maxWidth: '60%', backgroundColor: '#ccccd8', margin: 'auto', position: 'relative' }}>
-              <CardMedia
-                component="img"
-                alt="project1"
-                height="240"
-                image={project1}
-              />
-              <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <CardActions style={{ zIndex: 1 }}>
-                  <Button 
-                                    sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"
-                  onClick={handlePortfolioClick}>View</Button>
-                  <Button                                 sx={{
-                                  
-                                  background:'#593ea3',
-                                   color: 'white',
-                                   '&:hover': {
-                                     background: 'white',
-                                     color: '#593ea3',
-                                   },
-                                   fontFamily: 'Helvetica, Arial',
-                                 }}
-                                 size='large'
-                                 variant="contained"  onClick={handleGitPortfolioClick}>Github</Button>
-                </CardActions>
-              </div>
-            </Card>
-   </Carousel.Item>
-   <Carousel.Item>
-            <Card data-aos="fade-down" data-aos-delay='150' sx={{maxWidth: '60%', backgroundColor: '#ebc521', margin: 'auto', position: 'relative' }}>
-              <CardMedia
-                component="img"
-                alt="project2"
-                height="240"
-                image={project2}
-              />
-              <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <CardActions style={{ zIndex: 1 }}>
-                  <Button                                 sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"  onClick={handleMarketingClick}>View</Button>
-                  <Button                                 sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"  onClick={handleGitMarketingClick}>Learn More</Button>
-                </CardActions>
-              </div>
-            </Card>
-</Carousel.Item>
-<Carousel.Item>
-            <Card data-aos="fade-down" data-aos-delay='150' sx={{maxWidth: '60%', backgroundColor: '#ebc521', margin: 'auto', position: 'relative' }}>
-              <CardMedia
-                component="img"
-                alt="project2"
-                height="240"
-                image={project3}
-              />
-              <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <CardActions style={{ zIndex: 1 }}>
-                  <Button                                 sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"  onClick={handleTGMarketingClick}>View</Button>
-                  <Button                                 sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"  onClick={handleGitTGClick}>Learn More</Button>
-                </CardActions>
-              </div>
-            </Card>
-</Carousel.Item>
-<Carousel.Item>
-            <Card data-aos="fade-down" data-aos-delay='150' sx={{maxWidth: '60%', backgroundColor: '#ebc521', margin: 'auto', position: 'relative' }}>
-              <CardMedia
-                component="img"
-                alt="project"
-                height="240"
-                image={project4}
-              />
-              <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <CardActions style={{ zIndex: 1 }}>
-                  <Button                                 sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"  onClick={handleMarketMindsClick}>View</Button>
-                  <Button                                 sx={{
-                                  
-                                     background:'#593ea3',
-                                      color: 'white',
-                                      '&:hover': {
-                                        background: 'white',
-                                        color: '#593ea3',
-                                      },
-                                      fontFamily: 'Helvetica, Arial',
-                                    }}
-                                    size='large'
-                                    variant="contained"  onClick={handleGitMMClick}>Learn More</Button>
-                </CardActions>
-              </div>
-            </Card>
-</Carousel.Item>
-</Carousel>
+    <Carousel controls={false} indicators={true} style={{ width: '100%' }}>
+      {projects.map((project, index) => (
+        <Carousel.Item key={project.id}>
+          <Card
+            data-aos="fade-down"
+            data-aos-delay={`${100 + index * 50}`}
+            sx={{
+              maxWidth: '60%',
+              backgroundColor: index % 2 === 0 ? '#ccccd8' : '#ebc521',
+              margin: 'auto',
+              position: 'relative',
+            }}
+          >
+            <CardMedia
+              component="img"
+              alt={project.title}
+              height="240"
+              image={project.image}
+            />
+            <div
+              style={{
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <CardActions style={{ zIndex: 1 }}>
+                <Button
+                  sx={{
+                    background: '#593ea3',
+                    color: 'white',
+                    '&:hover': {
+                      background: 'white',
+                      color: '#593ea3',
+                    },
+                    fontFamily: 'Helvetica, Arial',
+                  }}
+                  size="large"
+                  variant="contained"
+                  onClick={() => window.open(project.liveLink, '_blank')}
+                >
+                  View
+                </Button>
+                <Button
+                  sx={{
+                    background: '#593ea3',
+                    color: 'white',
+                    '&:hover': {
+                      background: 'white',
+                      color: '#593ea3',
+                    },
+                    fontFamily: 'Helvetica, Arial',
+                  }}
+                  size="large"
+                  variant="contained"
+                  onClick={() => window.open(project.githubLink, '_blank')}
+                >
+                  Learn More
+                </Button>
+              </CardActions>
+            </div>
+          </Card>
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 }
