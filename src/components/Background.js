@@ -56,7 +56,7 @@ export default function Background() {
                                     </Heading>
                                     <Box mb={4} display="flex" justifyContent="center">
  
-                                        <Image
+                                        {/* <Image
                                             src={item.src}
                                             alt={item.alt}
                                             borderRadius="10px"
@@ -66,7 +66,7 @@ export default function Background() {
 
                                             objectFit="cover"
                                             // border="1px solid #593ea3"
-                                        />
+                                        /> */}
                                     </Box>
 
                                     <Stack mt='4' spacing='2' textAlign="center" >
