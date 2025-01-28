@@ -7,13 +7,16 @@ import TagBar from './TagBar';
 import 'aos/dist/aos.css';
 import TagLine from './TagLine';
 
+
 export default function HomePage() {
   return (
     <ChakraProvider>
+     
       <div id='home'
             style={{
               height:'100vh'
             }}>
+     
         <Box
           sx={{
             maxWidth: '100%',
@@ -28,6 +31,7 @@ export default function HomePage() {
           data-aos="fade-down"
           data-aos-delay='100'
         >
+         
           <Box sx={{ width: { base: '95%', md: '70%' }, marginTop: ['5%', '5%'] }}>
             <TagLine />
             <Heading
