@@ -11,9 +11,9 @@ import DividerStyle from './Styles/DividerStyle';
 
 export default function Background() {
     const data = [
-        { src: gd, alt: 'Graphic Design', heading: 'Graphic Design', url: 'https://github.com/MahnoorKhushbakht/GraphicDesign/tree/master', text: 'Researched, Assisted and designed innovative ideas for brand development.' },
-        { src: wb, alt: 'Website Development', heading: 'Website Development', url: 'https://github.com/MahnoorKhushbakht/pe_portfolio_website', text: 'I have accumulated valuable experience in crafting responsive and user-friendly web applications.' },
-        { src: amz, alt: 'Virtual Assistant', heading: 'Virtual Assistant', url: 'https://github.com/MahnoorKhushbakht/Virtual-Assistant-Portfolio', text: 'Researched 20+ promising products as per KPIs set by the client.' }
+        { src: gd, alt: 'Graphic Design', heading: 'Graphic Design', url: 'https://github.com/MahnoorKhushbakht/GraphicDesign/tree/master', text: 'Researched and designed innovative brand development ideas, coordinated with clients to create targeted advertising content, designed social media graphics, logos, brochures, and labels using Adobe Illustrator/Photoshop, and created animations/videos with Adobe After Effects.' },
+        { src: wb, alt: 'Website Development', heading: 'Website Development', url: 'https://github.com/MahnoorKhushbakht/pe_portfolio_website', text: 'Collaborated on web projects using Next.js and React.js, building responsive interfaces and robust backends with Next.js APIs and Express.js. Designed efficient database solutions with MongoDB, Prisma ORM, and Strapi CMS, streamlining data management while ensuring intuitive UI/UX designs and seamless functionality across devices.' },
+        { src: amz, alt: 'Virtual Assistant', heading: 'Virtual Assistant', url: 'https://github.com/MahnoorKhushbakht/Virtual-Assistant-Portfolio', text: 'Researched 20+ products based on client KPIs, calculated profit margins, created SEO-optimized listings using Helium10 Scribbles, analyzed competitors, generated keyword reports with Helium10 Magnet/Jungle Scout, and crafted feasibility reports.' }
     ];
 
     return (
