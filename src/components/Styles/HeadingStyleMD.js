@@ -9,11 +9,11 @@ export default function HeadinStyleMD({children}) {
           data-aos-delay='100'
           sx={{ fontSize: { xs: '25px', md: '30px' }}}
           color={'white'}
-          variant="h5"
+          variant="h4"
           fontWeight='bold'
           marginBottom={'10px'}
           fontFamily='Helvetica, Arial'
-          textAlign='center'
+          textAlign='letft'
         >
           {children}
         </Typography>
