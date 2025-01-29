@@ -27,7 +27,8 @@ export default function HomePage() {
             justifyContent: "flex-start",
             flexDirection: 'column',
             marginLeft: { base: '25px', md: '110px' },
-            marginTop: { base: '10px', md: '15px' },
+            marginTop: { base: '50px', md: '80px' }, // Increased spacing
+            marginBottom: { base: '50px', md: '80px' }, // Added bottom spacing
           }}
           data-aos="fade-down"
           data-aos-delay='100'

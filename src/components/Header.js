@@ -20,6 +20,7 @@ function Header() {
       data-bs-theme="dark"
       variant="dark"
       className="header"
+      fixed="top"
     >
       <Container>
       <Navbar.Brand href="#home">
