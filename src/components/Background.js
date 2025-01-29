@@ -20,10 +20,10 @@ export default function Background() {
         <LayoutStyle id='background'>
             <DividerStyle>
                 <HeadinStyleMD>
-                    Professional Experience
+                    Experience
                 </HeadinStyleMD>
                 <HeadinStyleSM>
-                    Proven track record in diverse professional roles.
+                    Proven track record in diverse roles.
                 </HeadinStyleSM>
             </DividerStyle>
             <ChakraProvider>
