@@ -9,7 +9,7 @@ export default function LayoutStyle({children,id}) {
         flexDirection: 'column',
         justifyContent: 'center',
         marginBottom:'50px',
-        height:'500px'
+        marginTop:'50px',
       }}
     >
       <Container>
