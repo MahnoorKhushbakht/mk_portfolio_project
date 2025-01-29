@@ -28,7 +28,7 @@ export default function HomePage() {
             flexDirection: 'column',
             marginLeft: { base: '25px', md: '110px' },
             marginTop: { base: '80px', md: '80px' },
-            marginBottom: { base: '80px', md: '80px' }, // Added bottom spacing
+            marginBottom: { base: '10px', md: '80px' }, 
           }}
           data-aos="fade-down"
           data-aos-delay='100'

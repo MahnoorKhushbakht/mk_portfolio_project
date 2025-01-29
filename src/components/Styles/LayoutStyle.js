@@ -8,8 +8,8 @@ export default function LayoutStyle({children,id}) {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        marginBottom:'50px',
-        marginTop:'50px',
+        marginBottom:'30px',
+        marginTop:'30px',
       }}
     >
       <Container>
