@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <div id='contact' >
-      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  marginBottom='50px'>
+      <Box display="flex" flexDirection={'column'} justifyContent="center" alignItems="center"  marginBottom='50px' marginTop='50px'>
         <Card
           variant="outlined"
           sx={cardStyle}

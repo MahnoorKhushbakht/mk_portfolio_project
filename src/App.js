@@ -9,11 +9,14 @@ import Projects from './components/Projects';
 import ClientReviews from './components/ClientReviews';
 import ScrollButton from './components/ScrollButton'
 import Skills from './components/Skills'
+import ProgressBar from './components/ProgressBar';
+
 
 function App() {
   return (
       <div className="App" style={{ display: 'flex', justifyContent: 'space-between',flexDirection:'column' }}>
         <Header/>
+<ProgressBar/>
         <Home/>
         <Background/>
         <Skills/>
