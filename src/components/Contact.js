@@ -348,7 +348,7 @@ const Contact = () => {
 
   return (
     <div id='contact' >
-      <Box display="flex" justifyContent="center" alignItems="center" marginTop='100px'  marginBottom='20px'>
+      <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
         <Card
           variant="filled"
           sx={cardStyle}
