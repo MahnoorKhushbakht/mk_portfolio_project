@@ -7,7 +7,20 @@ const cors = require('cors')
 const app = express()
 const UserModel = require('./src/models/user')
 app.use(express.json())
-app.use(cors())
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Allow all origins
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next(); // Pass control to the next middleware
+});
+
+const corsOptions = {
+  origin: 'http://localhost:3000', // Allow requests from this origin
+  methods: ['GET', 'POST', 'PUT', 'DELETE','PATCH'], // Include the PUT method
+  allowedHeaders: ['Content-Type'],
+};
+
+app.use(cors(corsOptions));
+
 const dbUrl = process.env.REACT_APP_DB_URL
 mongoose.connect(dbUrl);
 
@@ -27,6 +40,8 @@ app.post('/contactme', (req, res) => {
   });
 
 const port = process.env.REACT_APP_PORT || 3001;
+
+// const port = 3001
   
 app.listen(port, () => {
     console.log('Server listening');

@@ -316,6 +316,7 @@ const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const outerTheme = useTheme();
   const apiUrl = process.env.REACT_APP_API_URL;
+  
   const handleSubmit = (formData, resetFormFields) => {
     setIsLoading(true);
   
